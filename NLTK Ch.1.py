@@ -20,3 +20,15 @@ plt.show(block=True) #  had to add this...block=True means script will be paused
 
 #   generate() prints random text, generated using a trigram language model
 text3.generate()
+
+#   look at the set of unique words
+sorted(set(text3))
+
+#   count() number of word occurrences
+text3.count("smote")
+
+#   make a function
+def lexical_diversity(text):
+    return len(set(text)) / len(text)
+
+lexical_diversity(text3)
