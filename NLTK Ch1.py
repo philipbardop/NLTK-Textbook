@@ -2,7 +2,7 @@
 
 import nltk
 import matplotlib.pyplot as plt
-#   nltk.download()
+#   nltk.download() use only once
 from nltk.book import *
 
 #   A concordance view shows every occurrance of a single given word
@@ -42,7 +42,7 @@ fdist1 = FreqDist(text1)
 
 #   Looking at long words
 V = set(text1)
-long_words = [w for w in V if len(w) > 15] #    {w | w in V & P(w)}
+long_words = [w for w in V if len(w) > 15] #    {w | w in V & len(w)>15}
 sorted(long_words)
 
 '''
